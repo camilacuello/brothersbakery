@@ -1,0 +1,198 @@
+* {
+    margin: 0px;
+    padding: 4px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-weight: 400;
+}
+
+/**ESTILOS VIA BEM*/
+
+.header {
+    display: grid;
+    background-color: rgb(255, 255, 255);
+    border: 10px solid;
+    
+}
+
+.header__nav {
+    padding: 20px 30px;
+    justify-self: end;
+
+}
+
+.header__list {
+    position: absolute;
+    right: 20px;
+    top: 25px;
+
+}
+
+.header__item {
+    display: inline-block;
+    margin: 20px 10px;
+    font-size: 14px;
+}
+
+.header__item a{
+    text-decoration: none;
+}
+
+.header__anchor {
+    transition: all 0.5s;
+}
+
+.header__anchor:hover {
+    font-size: 20px;
+}
+
+.hero {
+    background-image: url(../img/frontstore.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    position: relative;
+}
+
+.hero__contenedor {
+    width: 600px;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+
+}
+
+.hero__tittle {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    background-color: #00000057;
+}
+
+.hero__desc {
+    bottom: 15px;
+    position: absolute;
+    color: white;
+    text-align: center;
+    background-color: #0000004a;
+    animation: mostrar 2s ease-in 1 normal;
+}
+
+@keyframes mostrar {
+    0% {opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.recetas {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: "receta receta";
+}
+
+.recetas__title {
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    margin-top: 15px;
+}
+
+.recetas__easy {
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.produc {
+    background-image: url(../img/Cheesecake.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    position: relative;
+
+}
+
+.produc__contenedor {
+    width: 600px;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+}
+
+.produc__title {
+    text-align: center;
+    font-size: 70px;
+    color: white;
+
+}
+
+.tortas {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.tortas__title {
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    margin-top: 15px;
+}
+
+.tortas__div {
+    padding: 10px;
+    margin-top: 10px;
+
+}
+
+.torta__img {
+    width: 70%;
+}
+
+.nosotros {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.nosotros__img {
+    width: 100%;
+}
+
+.form_input {
+    width: 400px;
+    padding: 15px;
+    margin: 10px;
+    background-color: #eaeaea;
+    border: 0;
+}
+
+.form_container{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    justify-content: center;
+}
+
+.form_grupo {
+    margin: auto;
+    width: 50%;
+    grid-column-start: 2;
+    text-align: center;
+}
+
+
+.form_boton {
+    text-align: center;
+    margin: 15px;
+}
+
+
+.footer {
+    top: 90%;
+    position: relative;
+}
