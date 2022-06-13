@@ -78,8 +78,10 @@ p {
     position: absolute;
     color: white;
     text-align: center;
-    background-color: #0000004a;
+    background-color: #0000009c;
     animation: mostrar 2s ease-in 1 normal;
+    right: 25%;
+    font-size: 20px;
 }
 
 @keyframes mostrar {
